@@ -1,0 +1,31 @@
+{
+  "name": "twitterfeed",
+  "version": "1.0.0",
+  "description": "A Node app to display and interact with twitter feed of user, using OAuth logig from Twitter",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test node index.js",
+    "start": "NODE_ENV=production node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NeetishRaj/TwitterFeed.git"
+  },
+  "keywords": [
+    "node",
+    "twitter",
+    "mongodb",
+    "passprt",
+    "express",
+    "jwt"
+  ],
+  "author": "Neetish Raj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NeetishRaj/TwitterFeed/issues"
+  },
+  "homepage": "https://github.com/NeetishRaj/TwitterFeed#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
