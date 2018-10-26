@@ -5,7 +5,7 @@ npm-debug.log
 dump.rdb
 .vscode/
 dist
-config.js
+#config.js
 coverage/
 .nyc_output/
 yarn.lock
