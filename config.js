@@ -9,11 +9,13 @@ const environments = {};
 environments.test = {
     "envName": "test",
     "hashingSecret": "ThisIsMyHashingSecret",
+    "sessionSecret": "SomeSecretString",
     "httpPort": 8080,
     "httpsPort": 3001,
     "twitter": {
         "consumerKey": 'p9iYqC8nyAd8ZBpqHQdgFopr0',
-        "consumerSecret": 'R0DZdQUMO9dZVTKYfWosX1luZXXcWIKIMi7QUWuHmOwFef0bAY'
+        "consumerSecret": 'R0DZdQUMO9dZVTKYfWosX1luZXXcWIKIMi7QUWuHmOwFef0bAY',
+        "callbackUrl": "http://127.0.0.1:8080/auth/twitter/callback"
     },
     "db": {
         "name": "twitterfeed",
@@ -27,11 +29,13 @@ environments.test = {
 environments.staging = {
     "envName": "staging",
     "hashingSecret": "ThisIsMyHashingSecret",
+    "sessionSecret": "SomeSecretString",
     "httpPort": 8080,
     "httpsPort": 3001,
     "twitter": {
         "consumerKey": 'p9iYqC8nyAd8ZBpqHQdgFopr0',
-        "consumerSecret": 'R0DZdQUMO9dZVTKYfWosX1luZXXcWIKIMi7QUWuHmOwFef0bAY'
+        "consumerSecret": 'R0DZdQUMO9dZVTKYfWosX1luZXXcWIKIMi7QUWuHmOwFef0bAY',
+        "callbackUrl": "http://127.0.0.1:8080/auth/twitter/callback"
     },
     "db": {
         "name": "twitterfeed",
@@ -45,11 +49,13 @@ environments.staging = {
 environments.production = {
     "envName": "production",
     "hashingSecret": "ThisIsMyHashingSecret",
+    "sessionSecret": "SomeSecretString",
     "httpPort": process.env.PORT,
     "httpsPort": 5001,
     "twitter": {
         "consumerKey": 'p9iYqC8nyAd8ZBpqHQdgFopr0',
-        "consumerSecret": 'R0DZdQUMO9dZVTKYfWosX1luZXXcWIKIMi7QUWuHmOwFef0bAY'
+        "consumerSecret": 'R0DZdQUMO9dZVTKYfWosX1luZXXcWIKIMi7QUWuHmOwFef0bAY',
+        "callbackUrl": "https://twitterfeed-app.herokuapp.com/auth/twitter/callback"
     },
     "db": {
         "name": "twitterfeed",
